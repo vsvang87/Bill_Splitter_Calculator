@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  min-height: 100vh;
+}
+
+.bg-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.bg-container::before {
+  content: '';
+  inset: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  background: #7664a0;
+  -webkit-clip-path: polygon(100% 0, 66% 57%, 38% 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 66% 57%, 38% 100%, 0 100%, 0 0);
+}
+
+.container {
+  position: relative;
+  max-width: 420px;
+  width: 100%;
+  min-height: 420px;
+  height: 100%;
+  background: #1d3353;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 10px 0 0px rgba(64, 71, 115, 0.2);
+          box-shadow: 5px 10px 0 0px rgba(64, 71, 115, 0.2);
+}
+
+.container h1 {
+  color: #fff;
+}
+
+.container .result {
+  width: 65%;
+  padding: 1rem 0rem;
+  margin: 1.5rem 0;
+  text-align: right;
+  background: #fff;
+}
+
+.container .result .result-content {
+  width: 80%;
+  padding: 1rem 0;
+}
+
+.container .input-group {
+  width: 80%;
+  padding: .5rem 0;
+}
+
+.container .input-group input {
+  width: 80%;
+  padding: 1rem 0.5rem;
+  margin: 0 2rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background: #fff;
+}
+
+.container .input-group input:focus {
+  border: 2px solid #ffb9ff;
+}
+
+.container .input-group .error {
+  color: #fff;
+  font-style: italic;
+  width: 80%;
+  padding: 0 2rem;
+  display: none;
+}
+
+.container .input-group .error.active {
+  display: block;
+}
+
+.container .button-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  padding: .5rem 0;
+}
+
+.container .button-div .btn {
+  border: none;
+  padding: 1rem 0.5rem;
+  width: 80%;
+  margin: 0 2rem;
+  border-radius: 10px;
+  background: #c389d7;
+  cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+$colorDarkBlue: #1d3353;
+$colorGrayishBlue: #404773;
+$colorGrayishPurple:  #7664a0;
+$colorPurple: #c389d7;
+$colorPeach: #ffb9ff;
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    min-height: 100vh;
+}
+.bg-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+.bg-container::before{
+    content: '';
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: $colorGrayishPurple;
+    clip-path: polygon(100% 0, 66% 57%, 38% 100%, 0 100%, 0 0);
+}
+.container{
+    position: relative;
+    max-width: 420px;
+    width: 100%;
+    min-height: 420px;
+    height: 100%;
+    background: $colorDarkBlue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 5px 10px 0 0px rgba($color: $colorGrayishBlue, $alpha: 0.2);
+    h1{
+        color: #fff;
+    }
+    .result{
+        width: 65%;
+        padding: 1rem 0rem;
+        margin: 1.5rem 0;
+        text-align: right;
+        background: #fff;
+        .result-content{
+            width: 80%;
+            padding: 1rem 0;
+        }
+    }
+    .input-group{
+        width: 80%;
+        padding: .5rem 0;
+        input{
+            width: 80%;
+            padding: 1rem 0.5rem;
+            margin: 0 2rem;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+            background: #fff;
+            &:focus{
+                border: 2px solid $colorPeach;
+            }
+        }
+      
+        .error{
+            color: #fff;
+            font-style: italic;
+            width: 80%;
+            padding: 0 2rem;
+            display: none;
+        }
+        .error.active{
+            display: block;
+        }
+    }
+    .button-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        padding: .5rem 0;
+        .btn{
+            border: none;
+            padding: 1rem 0.5rem;
+            width: 80%;
+            margin: 0 2rem;
+            border-radius: 10px;
+            background: $colorPurple;
+            cursor: pointer;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+        }
+    }
+}
