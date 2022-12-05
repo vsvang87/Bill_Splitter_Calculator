@@ -8,7 +8,6 @@ const resetBtn = document.getElementById("reset-btn");
 submitBtn.addEventListener("click", () => {
   if (billAmount.value === "") {
     errorMessage[0].classList.add("active");
-    console.log("Bill amount empty");
   } else if (persons.value === "") {
     errorMessage[1].classList.add("active");
   } else if (billAmount.value != "" && persons.value != "") {
@@ -20,7 +19,7 @@ submitBtn.addEventListener("click", () => {
 });
 
 resetBtn.addEventListener("click", () => {
-  result.innerHTML = "";
+  result.innerHTML = "0";
   billAmount.value = "";
   persons.value = "";
 });
